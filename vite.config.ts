@@ -9,7 +9,6 @@ export default defineConfig({
     react(),
     legacy({
       targets: ["chrome 42"],
-      modernTargets: ["chrome 42"],
     }),
   ],
   resolve: {

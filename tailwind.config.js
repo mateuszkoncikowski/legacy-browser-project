@@ -14,42 +14,42 @@ export default {
     },
     extend: {
       colors: {
-        border: "var(--border)",
-        input: "var(--input)",
-        ring: "var(--ring)",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        border: "#000000", // Replace with actual hex color
+        input: "#FFFFFF", // Replace with actual hex color
+        ring: "#FF0000", // Replace with actual hex color
+        background: "#CCCCCC", // Replace with actual hex color
+        foreground: "#333333", // Replace with actual hex color
         primary: {
-          DEFAULT: "var(--primary)",
-          foreground: "var(--primary-foreground)",
+          DEFAULT: "#0000FF", // Replace with actual hex color
+          foreground: "#FFFFFF", // Replace with actual hex color
         },
         secondary: {
-          DEFAULT: "var(--secondary)",
-          foreground: "var(--secondary-foreground)",
+          DEFAULT: "#00FF00", // Replace with actual hex color
+          foreground: "#000000", // Replace with actual hex color
         },
         destructive: {
-          DEFAULT: "var(--destructive)",
-          foreground: "var(--destructive-foreground)",
+          DEFAULT: "#FF0000", // Replace with actual hex color
+          foreground: "#FFFFFF", // Replace with actual hex color
         },
         muted: {
-          DEFAULT: "var(--muted)",
-          foreground: "var(--muted-foreground)",
+          DEFAULT: "#999999", // Replace with actual hex color
+          foreground: "#FFFFFF", // Replace with actual hex color
         },
         accent: {
-          DEFAULT: "var(--accent)",
-          foreground: "var(--accent-foreground)",
+          DEFAULT: "#FF9900", // Replace with actual hex color
+          foreground: "#000000", // Replace with actual hex color
         },
         popover: {
-          DEFAULT: "var(--popover)",
-          foreground: "var(--popover-foreground)",
+          DEFAULT: "#CCCCCC", // Replace with actual hex color
+          foreground: "#333333", // Replace with actual hex color
         },
         card: {
-          DEFAULT: "var(--card)",
-          foreground: "var(--card-foreground)",
+          DEFAULT: "#FFFFFF", // Replace with actual hex color
+          foreground: "#000000", // Replace with actual hex color
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
+        lg: "0.5rem",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },

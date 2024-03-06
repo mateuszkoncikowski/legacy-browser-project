@@ -1,4 +1,3 @@
-import { Select } from "@/components/Select";
 import { Input } from "@/components/ui/Input";
 import { Settings2 } from "lucide-react";
 import { Card } from "./ui/Card";
@@ -6,23 +5,10 @@ import { Card } from "./ui/Card";
 export const ParameterSettings = () => {
   return (
     <Card icon={Settings2} title="Parameter Settings">
-      <div className="flex justify-between items-center mb-6 pr-8">
+      <div className="flex items-center justify-between pr-8 mb-6">
         <p className="text-sm font-normal leading-5 text-petrol-800">
           Measurement mode
         </p>
-        <Select
-          placeholder="Select an option"
-          items={[
-            {
-              key: "Continuous",
-              value: "continuous",
-            },
-            {
-              key: "Single",
-              value: "single",
-            },
-          ]}
-        />
       </div>
       <div className="flex items-center justify-between pr-8 mb-6">
         <p className="text-sm font-normal leading-5 text-petrol-800">

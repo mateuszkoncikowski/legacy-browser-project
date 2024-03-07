@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     legacy({
-      targets: ["chrome 42"],
+      targets: ["Chrome 42"],
     }),
   ],
   resolve: {

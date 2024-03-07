@@ -10,8 +10,14 @@ import {
 } from "lucide-react";
 import { ParameterSettings } from "./components/ParameterSettings";
 import { Button } from "./components/ui/Button";
+import { useQuery } from "react-query";
+import { fetchState } from "./api/eis-meter";
 
 function App() {
+  useQuery("varsData", () => fetchState, {
+    refetchInterval: 2000,
+  });
+
   return (
     <div className="flex w-full h-screen text-neutrals-1000 bg-neutrals-200">
       <nav className="flex flex-col w-56 px-2 py-6 text-neutrals-100 bg-petrol-600">

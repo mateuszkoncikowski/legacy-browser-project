@@ -12,6 +12,7 @@ import { ParameterSettings } from "./components/ParameterSettings";
 import { Button } from "./components/ui/Button";
 import { useQuery } from "react-query";
 import { fetchState } from "./api/eis-meter";
+import { Select } from "./components/Select";
 
 function App() {
   useQuery("varsData", () => fetchState, {
@@ -96,6 +97,19 @@ function App() {
       </nav>
       <main>
         <div className="p-2">
+          <Select
+            placeholder="Select an option"
+            items={[
+              {
+                key: "Continuous",
+                value: "continuous",
+              },
+              {
+                key: "Single",
+                value: "single",
+              },
+            ]}
+          />
           <ParameterSettings />
         </div>
       </main>
